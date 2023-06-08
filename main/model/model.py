@@ -7,7 +7,7 @@ import statsmodels.api as sms
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-model_pkl_file = "main/model/houses_price_prediction.pkl"
+model_pkl_file = "./main/model/houses_price_prediction.pkl"
 
 with open(model_pkl_file, 'rb') as file:  
     model = pickle.load(file)

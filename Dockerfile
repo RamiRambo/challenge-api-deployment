@@ -1,5 +1,7 @@
 FROM python:3.10
 
+RUN mkdir /fastapi-app
+
 WORKDIR /fastapi-app
 
 COPY ./main/requirements.txt .

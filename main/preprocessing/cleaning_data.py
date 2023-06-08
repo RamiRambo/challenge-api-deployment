@@ -1,5 +1,5 @@
 import pandas as pd
-urban_cities = pd.read_csv("main/preprocessing/Urbain.csv")
+urban_cities = pd.read_csv("./main/preprocessing/Urbain.csv")
 
 apartments = ["Service-flat", "Apartment","Ground-floor", "New-real-estate-project-apartments", "Duplex"]
 kots = ["Flat-studio", "Kot"]
