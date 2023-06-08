@@ -3,8 +3,8 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import Optional, Literal
-from model.model import prediction
-from preprocessing.cleaning_data import preprocess
+from main.model.model import prediction
+from main.preprocessing.cleaning_data import preprocess
 import pandas as pd
 import uvicorn
 
@@ -47,5 +47,5 @@ async def create_item(item:Item):
 #     price = 2000 + 10000*predict.living_area + 20000*predict.rooms_number
 #     return {"the price for your apartment is " : price}
 
-if __name__ == "__main__":
-    uvicorn.run(app, port=8000, host="0.0.0.0")
+# if __name__ == "__main__":
+#     uvicorn.run(app, port=8000, host="0.0.0.0")

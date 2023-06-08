@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 COPY ./main ./main
 
-CMD ["python", "./main/app.py"]
+CMD uvicorn main.app:app --host 0.0.0.0 --port 8000
